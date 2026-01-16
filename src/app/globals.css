@@ -1,42 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700;800&family=Fustat:wght@400;500;600;700;800&display=swap'); */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-host-grotesk: 'Host Grotesk', sans-serif;
+  --font-fustat: 'Fustat', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Custom thin scrollbar with color #cbff54 */
+::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cbff54;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+/* Firefox */
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #cbff54 #063231;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;   /* px-4 */
+  padding-right: 1rem;
+  padding-top: 0.5rem;  /* py-2 */
+  padding-bottom: 0.5rem;
+  color: #171717;       /* text-primary */
+  font-weight: 600;     /* font-semibold */
+  border-radius: 0.5rem; /* rounded-lg */
+  background-color: #cbff54; /* bg-secondary */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.07), 0 1.5px 2.5px rgba(0,0,0,0.03); /* shadow-md */
+  transition: all 0.3s;
+  outline: none;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.btn:hover, .btn:focus-visible {
+  background-color: #fb923c; /* hover:bg-orange-400 */
+  color: #fff;               /* hover:text-white */
+}
+.btn:focus {
+  box-shadow: 0 0 0 2px #cbff54, 0 4px 6px rgba(0,0,0,0.07);
 }

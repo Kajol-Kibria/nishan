@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AS Research Lab - Portfolio Website
 
-## Getting Started
+This project is a research lab portfolio website for As Sazzad Mahmud, built with Next.js and Tailwind CSS. The website showcases research work in AI, machine learning, and computational science with a modern, professional design.
 
-First, run the development server:
+## 🚀 Getting Started
+
+First, install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── components/          # Reusable React components
+│   │   ├── Header.jsx      # Navigation header
+│   │   ├── Hero.jsx        # Hero section with ticker
+│   │   ├── About.jsx       # About section with widgets
+│   │   ├── Services.jsx    # Services with testimonials
+│   │   ├── WhyChooseUs.jsx # Why choose us section
+│   │   ├── Counter.jsx     # Animated counters
+│   │   ├── CaseStudy.jsx   # Case study grid
+│   │   ├── Testimonials.jsx # Testimonial slider
+│   │   ├── Blog.jsx        # Blog posts grid
+│   │   ├── CTA.jsx         # Call to action section
+│   │   └── Footer.jsx      # Footer with links
+│   ├── globals.css         # Global styles and Tailwind
+│   ├── layout.js           # Root layout with fonts
+│   └── page.js             # Home page
+├── components/             # (Legacy - moved to app/components)
+public/                     # Static assets
+```
 
-## Learn More
+## 🎨 Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 14** with App Router
+- **Tailwind CSS** for styling
+- **Custom fonts**: Host Grotesk and Fustat
+- **Responsive design** for all screen sizes
+- **Component-based architecture**
+- **Research-focused content** for AI/ML portfolio
+- **Modern gradient backgrounds** and professional design
+- **Optimized images** with Next.js Image component
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📋 Required Assets
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The following assets need to be added to the `public/` folder for full functionality:
 
-## Deploy on Vercel
+### Icons & Logos
+- `logo.svg` ✅ (Created - placeholder)
+- `arrow-right-02.svg` ✅ (Created)
+- `shopping-bag-black.svg` ✅ (Created)
+- `arrow-right-01.svg`
+- `arrow-left-01.svg`
+- `arrow-right-03.svg`
+- `maps-location-01.svg`
+- `mail-01.svg`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Star Ratings
+- `Review Star.svg` (5 copies needed)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Service Icons
+- `si-1.svg`, `si-2.svg`, `si-3.svg`
+- `icon-1.svg`, `icon-2.svg`, `icon-4.svg`
+
+### Brand Logos
+- `brand-logo-1.svg`, `brand-logo-2.svg`, `brand-logo-3.svg`
+
+### Hero Images
+- `hero-img-1.png`, `hero-img-2.png`, `hero-img-3.png`
+- `hero-img-4.png`, `hero-img-5.png`, `hero-img-6.png`
+
+### User Images
+- `user-1.png`, `user-3.png`, `member-12.png`, `member-11.png`
+
+### Content Images
+- `img-3.png`, `img-4.png`, `img-7.png`, `img-8.png`
+- `img-16.png`, `img-11.png`, `img-12.png`
+- `img-17.png`, `img-18.png`
+
+### Favicon
+- `favicon.png`, `Webclip.png`
+
+### Button Icons
+- `corner-up-right.svg`, `web-design-01.svg`, `download.svg`
+
+## 🔧 Customization
+
+### Styling
+All styles are in `src/app/globals.css`. The design uses Tailwind utility classes with custom component styles.
+
+### Fonts
+Fonts are configured in `tailwind.config.js` and loaded in `layout.js`.
+
+### Components
+Each section is a separate component in `src/app/components/`. Modify these files to customize content and styling.
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+```bash
+npm run build
+```
+
+Deploy to Vercel with the built files.
+
+### Other Platforms
+This is a standard Next.js app that can be deployed to any platform supporting Node.js.
+
+## 📝 Notes
+
+- Website is designed for As Sazzad Mahmud's research portfolio
+- Content focuses on AI, machine learning, and computational research
+- Placeholder icons and gradients used for visual elements
+- Add real publication links and research project details
+- Connect to LinkedIn, GitHub, and academic profiles
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
