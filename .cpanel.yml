@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - /bin/cp -R * $DEPLOYPATH
+    - cd $DEPLOYPATH
+    - /usr/local/bin/npm install
+    - /usr/local/bin/npm run build
