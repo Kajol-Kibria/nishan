@@ -1,7 +1,8 @@
-export default function Funding() {
+import Funding from '@/components/funding/Funding'
+import React from 'react'
+
+export default function page() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-gray-800">Funding Page</h1>
-    </div>
-  );
+    <Funding />
+  )
 }

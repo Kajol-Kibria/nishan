@@ -1,7 +1,8 @@
 import { Host_Grotesk, Fustat } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "@/components/home/Navbar";
+import Footer from "@/components/home/Footer";
+
 
 const hostGrotesk = Host_Grotesk({
   subsets: ["latin"],

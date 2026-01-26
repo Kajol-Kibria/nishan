@@ -1,7 +1,8 @@
-export default function FormerLabMembers() {
+import FormerLabMembers from '@/components/lab-members/FormerLabMembers'
+import React from 'react'
+
+export default function page() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-gray-800">Former Lab Members Page</h1>
-    </div>
-  );
+    <FormerLabMembers />
+  )
 }

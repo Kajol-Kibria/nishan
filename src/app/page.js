@@ -1,17 +1,15 @@
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import WhyChooseUs from './components/WhyChooseUs';
-import Testimonials from './components/Testimonials';
+import About from "@/components/home/About";
+import Hero from "@/components/home/Hero";
+import ResearchAreas from "@/components/home/ResearchAreas";
+import Testimonials from "@/components/home/Testimonials";
 
 export default function Home() {
   return (
     <div>
       <Hero />
-      <About />
-      <Services />
-      <WhyChooseUs />
-      <Testimonials />
+      {/* <About /> */}
+      <ResearchAreas />
+      {/* <Testimonials /> */}
     </div>
   );
 }
