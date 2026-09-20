@@ -21,6 +21,7 @@ export const site = {
 /* ——— Navigation (single-page anchors) ——— */
 
 export const nav = [
+  { label: "Home", href: "/" },
   { label: "Research", href: "/research" },
   { label: "People", href: "/members" },
   { label: "Publications", href: "/publications" },
