@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+/* ————————————————————————————————————————————
+   Lenis smooth scroll — base requirements
+   (native CSS smooth scrolling is intentionally
+   disabled; Lenis drives all scrolling)
+   ———————————————————————————————————————————— */
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@theme {
+  /* ——— Nishan Lab · editorial academic palette ——— */
+  --color-paper: #f8f7f3;
+  --color-paper-2: #f0eee7;
+  --color-ink: #1d1c18;
+  --color-ink-2: #55524a;
+  --color-ink-3: #706d61; /* ≥ 4.5:1 on paper — metadata text stays readable */
+  --color-line: #ddd9cd;
+  --color-accent: #2e4b3e;
+
+  /* Self-hosted via next/font (see app/layout.tsx) */
+  --font-serif: var(--font-newsreader), "Iowan Old Style", Georgia, serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SFMono-Regular", monospace;
+}
+
+/* ————— Base ————— */
+
+/* Smooth scrolling is handled by Lenis in JS (see src/lib/scroll.ts);
+   visitors who prefer reduced motion get native, instant scrolling. */
+
+body {
+  @apply bg-paper font-sans text-ink antialiased;
+  font-feature-settings: "cv05", "ss01";
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-paper);
+}
+
+:focus-visible {
+  outline: 1.5px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* Serif optical sizing */
+.font-serif {
+  font-optical-sizing: auto;
+}
+
+/* ————— Scroll reveal (restrained, single easing) ————— */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ————— Nav link hairline ————— */
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-link:hover::after,
+.nav-link.is-active::after {
+  transform: scaleX(1);
+}
+
+.nav-link.is-active {
+  color: var(--color-ink);
+}
+
+/* ————— Unified photographic grading ————— */
+/* One consistent treatment for every image: slightly
+   desaturated, gentle contrast — editorial, not glossy. */
+
+.photo {
+  filter: saturate(0.82) contrast(0.98);
+}
+
+.group:hover .photo {
+  filter: none;
+}
