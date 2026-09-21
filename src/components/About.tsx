@@ -35,6 +35,8 @@ export function About() {
                     Network Pharmacology
                     <br />
                     Pharmacology
+                    <br />
+                    Computational Cancer Research
                   </p>
                 </div>
               </div>

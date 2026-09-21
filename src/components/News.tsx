@@ -7,7 +7,6 @@ export function NewsSection() {
     <section id="news" className="scroll-mt-20 border-t border-line bg-paper-2/50">
       <div className="mx-auto max-w-[1280px] px-5 py-16 md:px-10 md:py-28">
         <SectionHeader
-          index="06"
           title="Recent Activity"
           note="Drawn from the group's publication record"
         />

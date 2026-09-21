@@ -1,7 +1,7 @@
 import { Reveal } from "./Reveal";
 
 interface SectionHeaderProps {
-  index: string;
+  index?: string; // omit for home-page sections that should not show a number
   title: string;
   note?: string; // small mono annotation, right aligned
 }
@@ -11,9 +11,11 @@ export function SectionHeader({ index, title, note }: SectionHeaderProps) {
     <Reveal>
       <div className="flex items-end justify-between gap-6 border-b border-line pb-6">
         <div className="flex items-baseline gap-4 md:gap-6">
-          <span className="font-mono text-[11px] tracking-[0.22em] text-ink-3">
-            {index}&nbsp;/
-          </span>
+          {index && (
+            <span className="font-mono text-[11px] tracking-[0.22em] text-ink-3">
+              {index}&nbsp;/
+            </span>
+          )}
           <h2 className="font-serif text-[1.9rem] leading-none font-light tracking-[-0.01em] md:text-[2.6rem]">
             {title}
           </h2>

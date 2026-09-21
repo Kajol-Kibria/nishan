@@ -7,7 +7,7 @@ export function Investigator() {
   return (
     <section id="investigator" className="scroll-mt-20 border-t border-line">
       <div className="mx-auto max-w-[1280px] px-5 py-16 md:px-10 md:py-28">
-        <SectionHeader index="03" title="Principal Investigator" />
+        <SectionHeader title="Principal Investigator" />
 
         <div className="mt-14 grid gap-12 md:mt-20 lg:grid-cols-12 lg:gap-10">
           {/* ——— Portrait ——— */}

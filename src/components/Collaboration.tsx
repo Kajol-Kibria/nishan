@@ -7,7 +7,7 @@ export function Collaboration() {
   return (
     <section id="collaboration" className="scroll-mt-20 border-t border-line">
       <div className="mx-auto max-w-[1280px] px-5 py-16 md:px-10 md:py-28">
-        <SectionHeader index="07" title="Collaboration" />
+        <SectionHeader title="Collaboration" />
 
         <div className="mt-14 grid gap-12 md:mt-20 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-5">
@@ -31,18 +31,13 @@ export function Collaboration() {
           <div className="lg:col-span-6 lg:col-start-7">
             {collaboration.audiences.map((a, i) => (
               <Reveal key={a.label} delay={120 + i * 70}>
-                <div className="grid gap-1.5 border-t border-line py-6 last:border-b sm:grid-cols-[220px_1fr] sm:items-baseline sm:gap-8">
+                <div className="grid gap-1.5 border-b border-line py-6 sm:grid-cols-[220px_1fr] sm:items-baseline sm:gap-8">
                   <h3 className="font-serif text-[1.15rem] leading-tight">{a.label}</h3>
                   <p className="text-[13.5px] leading-[1.8] text-ink-2">{a.note}</p>
                 </div>
               </Reveal>
             ))}
-            <Reveal delay={200}>
-              <p className="mt-6 font-mono text-[10px] leading-[1.8] text-ink-3">
-                Wording above is placeholder — the laboratory's actual invitation
-                and application process will replace it.
-              </p>
-            </Reveal>
+
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ export function Publications() {
     <section id="publications" className="scroll-mt-20 border-t border-line bg-paper-2/50">
       <div className="mx-auto max-w-[1280px] px-5 py-16 md:px-10 md:py-28">
         <SectionHeader
-          index="05"
+          index="04"
           title="Selected Publications"
           note="From the group's Google Scholar record"
         />

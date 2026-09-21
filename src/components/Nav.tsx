@@ -46,15 +46,14 @@ export function Nav() {
           {/* Desktop */}
           <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
             {nav.map((item) => {
-              const isActive = pathname === item.href || (pathname === '/' && item.href === '/#news');
+              const isActive = item.href.includes('#') ? false : pathname === item.href;
               return (
                 <Link
                   key={item.label}
                   href={item.href}
                   aria-current={isActive ? "page" : undefined}
-                  className={`nav-link text-[11.5px] font-medium uppercase tracking-[0.16em] transition-colors hover:text-ink ${
-                    isActive ? "is-active text-ink" : "text-ink-2"
-                  }`}
+                  className={`nav-link text-[11.5px] font-medium uppercase tracking-[0.16em] transition-colors hover:text-ink ${isActive ? "is-active text-ink" : "text-ink-2"
+                    }`}
                 >
                   {item.label}
                 </Link>
@@ -81,9 +80,8 @@ export function Nav() {
         id="mobile-menu"
         aria-hidden={!open}
         data-lenis-prevent
-        className={`fixed inset-0 z-[60] flex flex-col overflow-y-auto bg-paper transition-opacity duration-500 md:hidden ${
-          open ? "opacity-100" : "pointer-events-none opacity-0"
-        }`}
+        className={`fixed inset-0 z-[60] flex flex-col overflow-y-auto bg-paper transition-opacity duration-500 md:hidden ${open ? "opacity-100" : "pointer-events-none opacity-0"
+          }`}
       >
         <div className="flex h-16 items-center justify-between border-b border-line px-5">
           <Wordmark />
@@ -99,21 +97,19 @@ export function Nav() {
 
         <nav className="flex flex-1 flex-col justify-center gap-2 px-6" aria-label="Mobile">
           {nav.map((item, i) => {
-            const isActive = pathname === item.href || (pathname === '/' && item.href === '/#news');
+            const isActive = item.href.includes('#') ? false : pathname === item.href;
             return (
               <Link
                 key={item.label}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className={`group flex items-baseline gap-5 border-b border-line py-5 transition-all duration-500 ${
-                  open ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0"
-                }`}
+                className={`group flex items-baseline gap-5 border-b border-line py-5 transition-all duration-500 ${open ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0"
+                  }`}
                 style={{ transitionDelay: open ? `${90 + i * 60}ms` : "0ms" }}
               >
                 <span
-                  className={`font-mono text-[11px] tracking-[0.2em] transition-colors ${
-                    isActive ? "text-accent" : "text-ink-3"
-                  }`}
+                  className={`font-mono text-[11px] tracking-[0.2em] transition-colors ${isActive ? "text-accent" : "text-ink-3"
+                    }`}
                 >
                   0{i + 1}
                 </span>

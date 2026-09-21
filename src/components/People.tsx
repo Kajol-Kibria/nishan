@@ -10,7 +10,7 @@ export function People() {
   return (
     <section id="people" className="scroll-mt-20 border-t border-line">
       <div className="mx-auto max-w-[1280px] px-5 py-16 md:px-10 md:py-28">
-        <SectionHeader index="04" title="People" />
+        <SectionHeader index="03" title="People" />
 
         <Reveal delay={80}>
           <p className="mt-10 max-w-[60ch] text-[14.5px] leading-[1.9] text-ink-2 md:mt-12">

@@ -40,7 +40,7 @@ export function Environment() {
                 Fig. 02
               </span>
               <span className="font-mono text-[10px] tracking-[0.06em] text-ink-3">
-                Group meeting at the whiteboard — photograph: Pexels
+                Group meeting at the whiteboard - photograph: Pexels
               </span>
             </figcaption>
           </figure>

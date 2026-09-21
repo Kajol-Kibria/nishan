@@ -30,9 +30,22 @@ export function Footer() {
           <p className="font-mono text-[10px] uppercase leading-[1.9] tracking-[0.16em] text-ink-3">
             {site.department} · {site.institution}
           </p>
-          <p className="font-mono text-[10px] leading-[1.9] tracking-[0.1em] text-ink-3">
-            © 2026 Nishan Lab
-          </p>
+          <div className="flex flex-col gap-1 md:items-end">
+            <p className="font-mono text-[10px] leading-[1.9] tracking-[0.1em] text-ink-3">
+              © 2026 Nishan Lab
+            </p>
+            <p className="font-mono text-[10px] leading-[1.9] tracking-[0.1em] text-ink-3">
+              Developed &amp; maintained by{" "}
+              <a
+                href="https://www.linkedin.com/in/kajol-kibria/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ink-2 underline underline-offset-2 transition-colors hover:text-ink"
+              >
+                Kibria
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

@@ -13,7 +13,7 @@ export const site = {
   department: "Department of Pharmacy",
   institution: "Dhaka International University",
   heroDescription:
-    "Nishan Lab is a research group in the Department of Pharmacy at Dhaka International University, led by As-Sazzad Mahmud Nishan. The group studies bioactive compounds from medicinal plants — from phytochemistry to computational and experimental pharmacology.",
+    "Nishan Lab is a research group in the Department of Pharmacy at Dhaka International University, led by As-Sazzad Mahmud Nishan. The group studies bioactive compounds from medicinal plants - from phytochemistry to computational and experimental pharmacology.",
   email: "sazzad.phar@diu.ac",
   location: "Dhaka, Bangladesh",
 };
@@ -32,8 +32,9 @@ export const nav = [
 /* ——— 01 · About the laboratory ——— */
 
 export const about = [
-  "Nishan Lab studies natural products: the chemistry of medicinal plants and the pharmacology of the molecules they contain. Led by As-Sazzad Mahmud Nishan in the Department of Pharmacy at Dhaka International University, the group looks for bioactive compounds — particularly in the medicinal flora of Bangladesh — and asks what they do, and how.",
-  "The approach moves from plant to mechanism: extraction and fractionation, phytochemical identification by GC–MS and FTIR spectroscopy, in vitro and in vivo bioassays, and computational pharmacology — molecular docking, ADMET prediction and network analysis — that connects compounds to plausible protein targets.",
+  "Nishan Lab studies natural products: the chemistry of medicinal plants and the pharmacology of the molecules they contain. Led by As-Sazzad Mahmud Nishan in the Department of Pharmacy at Dhaka International University, the group looks for bioactive compounds - particularly in the medicinal flora of Bangladesh - and asks what they do, and how.",
+  "The approach moves from plant to mechanism: extraction and fractionation, phytochemical identification by GC-MS and FTIR spectroscopy, in vitro and in vivo bioassays, and computational pharmacology - molecular docking, ADMET prediction and network analysis - that connects compounds to plausible protein targets.",
+  "A growing focus of the laboratory is computational cancer research. The group applies cheminformatics and machine-learning methods to screen plant-derived compounds against oncogenic targets - including HER2, explored in the group's Dimocarpus longan study - profiling candidates for anti-tumour potential, selectivity, and drug-likeness before any wet-lab commitment.",
   "The laboratory trains pharmacy students in both bench and computational methods, and collaborates with natural-product and pharmacology researchers in Bangladesh and abroad.",
 ];
 
@@ -62,14 +63,20 @@ export const researchThemes: ResearchTheme[] = [
   {
     index: "03",
     title: "Pharmacological Evaluation",
-    note: "In vitro and in vivo assessment of therapeutic activity — antioxidant, antimicrobial, hepatoprotective and beyond.",
+    note: "In vitro and in vivo assessment of therapeutic activity - antioxidant, antimicrobial, hepatoprotective and beyond.",
     keywords: ["Bioassays", "In vivo models", "Ethnopharmacology"],
   },
   {
     index: "04",
     title: "Medicinal Flora & Endophytes",
-    note: "Under-studied species — including mangrove-associated endophytic fungi — as sources of new chemistry.",
+    note: "Under-studied species - including mangrove-associated endophytic fungi - as sources of new chemistry.",
     keywords: ["Medicinal plants", "Endophytic fungi", "Flora of Bangladesh"],
+  },
+  {
+    index: "05",
+    title: "Computational Cancer Research",
+    note: "Harnessing cheminformatics, molecular docking, and machine-learning approaches to identify plant-derived candidates against oncogenic targets - from target selection and virtual screening through ADMET and toxicity profiling to mechanistic pathway analysis.",
+    keywords: ["Oncology", "Virtual screening", "Cancer targets", "Cheminformatics", "Machine learning"],
   },
 ];
 
@@ -90,8 +97,8 @@ export const principalInvestigator = {
   office: "Satarkul, Badda, Dhaka-1212, Bangladesh",
   photo: "/images/pi.jpg",
   bio: [
-    "As-Sazzad Mahmud Nishan is an Assistant Professor in the Department of Pharmacy at Dhaka International University, Dhaka. His research investigates the bioactive chemistry of medicinal plants — natural product chemistry, pharmacology, and the computational tools that connect compounds to their biological targets.",
-    "His publications span phytochemical characterisation by GC–MS and FTIR spectroscopy, in vitro and in vivo pharmacological screening, and molecular docking, ADMET and network-pharmacology analysis — recent subjects include Acacia crassicarpa, Ficus benjamina, Dimocarpus longan, Cassia fistula and mangrove-associated endophytic fungi.",
+    "As-Sazzad Mahmud Nishan is an Assistant Professor in the Department of Pharmacy at Dhaka International University, Dhaka. His research investigates the bioactive chemistry of medicinal plants - natural product chemistry, pharmacology, and the computational tools that connect compounds to their biological targets.",
+    "His publications span phytochemical characterisation by GC–MS and FTIR spectroscopy, in vitro and in vivo pharmacological screening, and molecular docking, ADMET and network-pharmacology analysis - recent subjects include Acacia crassicarpa, Ficus benjamina, Dimocarpus longan, Cassia fistula and mangrove-associated endophytic fungi.",
   ],
   interests: [
     "Natural product chemistry",
@@ -149,6 +156,20 @@ export const members: Member[] = [
     ],
   },
   {
+    id: "anima-jahan-amena",
+    name: "Anima Jahan Amena",
+    status: "former",
+    role: "Research Member",
+    email: "animajahan8@gmail.com",
+    photo: "/images/Anima Jahan Amena.jpg",
+    links: [
+      { label: "LinkedIn", href: "https://www.linkedin.com/search/results/all/?keywords=Anima+Jahan+Amena" }
+    ],
+    bio: [
+      "I am a fresh Pharmacy graduate from Dhaka International University with an interest in pharmaceutical research and drug discovery. I have academic experience in pharmacological studies, molecular docking, and phytochemical analysis, along with strong skills in scientific communication and presentation design. My goal is to pursue a research-oriented career and contribute to meaningful scientific discoveries."
+    ],
+  },
+  {
     id: "farjana-hossain",
     name: "Farjana Hossain",
     status: "former",
@@ -193,7 +214,7 @@ export const members: Member[] = [
       { label: "LinkedIn", href: "https://www.linkedin.com/in/mirja-mohammad-niaz-morshed-531b77300/" }
     ],
     bio: [
-      "Don't stop when you're tired. Stop when you're done."
+      "Pharmacy Graduate | Molecular Docking & Computer-Aided Drug Design (CADD) | Drug Discovery Research | kobo Toolbox & SPSS"
     ],
   },
   {
@@ -210,6 +231,106 @@ export const members: Member[] = [
     ],
     bio: [
       "I am a former member of Nishan Lab from Batch 27. Currently, I am pursuing my M.Pharm at DIU. My research interests lie in the fields of Advanced Pharmacology."
+    ],
+  },
+  {
+    id: "md-rabbi-hasan",
+    name: "Md. Rabbi Hasan",
+    status: "former",
+    batch: "25th",
+    role: "Research Member",
+    email: "hasanmdrabbi52@gmail.com",
+    currentPosition: "Officer, Regulatory Affairs at Sun Pharmaceuticals EZ Ltd",
+    photo: "/images/MD_ Rabbi Hasan.jpg",
+    publications: [
+      "10.53941/jmnp.2026.100010",
+      "10.53941/jmnp.2025.100015",
+    ],
+    links: [
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/md-rabbi-hasan-502a6033b" },
+    ],
+    bio: [
+      "Md. Rabbi Hasan is a Pharmacy graduate from Dhaka International University with a CGPA of 3.79. His research experience includes in vivo and in vitro studies, phytochemical and pharmacological research, in silico drug design, and network pharmacology.",
+      "He is particularly interested in integrating experimental and computational approaches to advance natural product research and drug discovery.",
+    ],
+  },
+  {
+    id: "md-kamruzzaman",
+    name: "Md. Kamruzzaman",
+    status: "current",
+    batch: "30th",
+    role: "Research Member",
+    email: "sdshishir11111@gmail.com",
+    currentPosition: "Student",
+    photo: "/images/MD KAMRUZZAMAN.jpeg",
+    links: [
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/md-kamruzzaman-708767438" },
+    ],
+    bio: [
+      "I am Md. Kamruzzaman, a running student of Dhaka International University, Department of Pharmacy, Batch 30th (Roll: 01). I am interested in any kind of research or publications.",
+    ],
+  },
+  {
+    id: "jesan-chakma",
+    name: "Jesan Chakma",
+    status: "former",
+    batch: "28th",
+    role: "Research Member",
+    email: "jesanchakma13@gmail.com",
+    photo: "/images/Jason Chakma.webp",
+    links: [
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/jesan-chakma-a15808373" },
+    ],
+    bio: [
+      "I am a passionate and motivated B.Pharm graduate with an interest in pharmaceutical sciences, research, and professional development. I am eager to learn new skills, contribute to meaningful projects, and grow through academic and professional experiences.",
+    ],
+  },
+  {
+    id: "tanvir-shikder-dipu",
+    name: "Tanvir Shikder Dipu",
+    status: "former",
+    batch: "28th",
+    role: "Research Member",
+    email: "tanvirshikder1971@gmail.com",
+    photo: "/images/Tanvir Shikder.png",
+    bio: [
+      "I am Tanvir Shikder Dipu, from Bhaluka, Mymensingh. I recently completed my B.Pharm from Dhaka International University and am currently preparing for M.Pharm.",
+    ],
+  },
+  {
+    id: "anika-tasnim-mimmi",
+    name: "Anika Tasnim Mimmi",
+    status: "former",
+    batch: "28th",
+    role: "Research Member",
+    email: "tasnimmimmi18@gmail.com",
+    currentPosition: "PMD Executive at Baby Nutrition Company",
+    photo: "/images/Tasnim Mimmi.jpg",
+    links: [
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/anika-tasnim-mimmi" },
+    ],
+    bio: [
+      "I am a Pharmacy graduate from Dhaka International University with a strong interest in the baby nutrition and healthcare industry. I am currently pursuing a career as a PMD Executive in a baby nutrition company, where I aim to apply my pharmaceutical knowledge, communication skills, and professional expertise to contribute to the organisation's growth and development.",
+    ],
+  },
+  {
+    id: "md-mohiuddin-maruf",
+    name: "Md. Mohiuddin Maruf",
+    status: "former",
+    batch: "25th",
+    role: "Research Member",
+    email: "m.maruf.pharm@gmail.com",
+    currentPosition: "Medical Transcriptionist",
+    photo: "/images/Md Maruf.jpg",
+    publications: [
+      "10.53941/jmnp.2026.100010",
+      "10.53941/jmnp.2025.100015",
+    ],
+    links: [
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/md-mohiuddin-maruf-082708337" },
+    ],
+    bio: [
+      "I am working as a Medical Transcriptionist and have a keen interest in research. I enjoy taking on challenges and working as part of a team.",
     ],
   },
 ];
@@ -406,6 +527,11 @@ export interface NewsItem {
 }
 
 export const news: NewsItem[] = [
+  {
+    date: "2 Sep 2026",
+    category: "Lab Growth",
+    text: "Five new members have joined Nishan Lab: Kajol e Kibria, Md. Al-Amin, Shishir Ahmed, Mahim Ahmed, and Rakib. Welcome to the group - we look forward to the science ahead.",
+  },
   {
     date: "2026",
     category: "Publication",

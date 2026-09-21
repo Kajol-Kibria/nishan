@@ -87,10 +87,10 @@ export function Hero() {
         <Reveal delay={200}>
           <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1.5 border-t border-paper/20 pt-3">
             <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-paper/55">
-              Fig. 01 — The laboratory
+              Fig. 01 - The laboratory
             </span>
             <span className="font-mono text-[10px] uppercase leading-[1.9] tracking-[0.16em] text-paper/55">
-              Principal Investigator — {pi.shortName}
+              Principal Investigator - {pi.shortName}
             </span>
             <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-paper/55">
               {site.location}

@@ -27,13 +27,13 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nishan Lab — Department of Pharmacy, Dhaka International University",
+  title: "Nishan Lab - Department of Pharmacy, Dhaka International University",
   description:
-    "Nishan Lab — a research group in the Department of Pharmacy at Dhaka International University, studying natural product chemistry and pharmacology. Research, people, publications and contact.",
+    "Nishan Lab - a research group in the Department of Pharmacy at Dhaka International University, studying natural product chemistry and pharmacology. Research, people, publications and contact.",
   openGraph: {
     type: "website",
     siteName: "Nishan Lab",
-    title: "Nishan Lab — Natural Product Chemistry & Pharmacology",
+    title: "Nishan Lab - Natural Product Chemistry & Pharmacology",
     description:
       "A research group in the Department of Pharmacy at Dhaka International University: medicinal plants, phytochemistry, and computational pharmacology.",
     images: [
