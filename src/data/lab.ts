@@ -185,6 +185,25 @@ export const members: Member[] = [
       "Pharmacy Graduate | PMD Executive in Baby Nutrition | Skilled in Pharmaceutical Operations, GMP, QA/QC & Product Management | Passionate about Healthcare, Nutrition & Continuous Growth."
     ],
   },
+    {
+    id: "sabbir-hossain",
+    name: "Sabbir Hossain",
+    status: "current",
+    batch: "30th",
+    role: "Research Member",
+    currentPosition: "General Secretary, Diu Pharma Club",
+    email: "sabbirpharmax@gmail.com",
+    photo: "/images/Sabbir Hossain.png",
+    links: [
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/in/sabbir-hossain-212443426?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      },
+    ],
+    bio: [
+      "I am Sabbir Hossain, a Bachelor of Pharmacy (B.Pharm) student at Dhaka International University. I currently serve as the General Secretary of DIU Pharma Club, and President of the CCRTBD DIU Unit. I am passionate about leadership, pharmaceutical research, cancer awareness, and community health. My goal is to develop my skills, contribute to society, and make a meaningful impact in the healthcare sector through research, innovation, and leadership.",
+    ],
+  },
   {
     id: "md-al-amin",
     name: "Md. Al-Amin",
@@ -331,6 +350,62 @@ export const members: Member[] = [
     ],
     bio: [
       "I am working as a Medical Transcriptionist and have a keen interest in research. I enjoy taking on challenges and working as part of a team.",
+    ],
+  },
+  {
+    id: "mahim-ahmed-rifat",
+    name: "Mahim Ahmed Rifat",
+    status: "current",
+    batch: "30th",
+    role: "Research Member",
+    currentPosition: "Student",
+    email: "mahimahmedrifat@gmail.com",
+    photo: "/images/Mahim Ahmed.jpg",
+    links: [
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/in/mahim-ahmed-rifat-07965a22a?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      },
+    ],
+    bio: [
+      "I'm strongly dedicated in research career and my long-term goal is to pursue an M.Pharm and PhD to advance my expertise in pharmaceutical research.",
+    ],
+  },
+  {
+    id: "sharmin-akter-anamika",
+    name: "Sharmin Akter Anamika",
+    status: "former",
+    batch: "24th",
+    role: "Research Member",
+    currentPosition: "Faculty member, Benchmark International School",
+    email: "sharminanamika2020@gmail.com",
+    photo: "/images/Sharmin Akter Anamika.png",
+    links: [
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/in/sharmin-akter-anamika-b05044259",
+      },
+    ],
+    bio: [
+      "I am a dedicated and motivated professional with a passion for teaching, learning, and personal growth. I believe in lifelong learning and continuous professional development. I value effective communication, creativity, and critical thinking. I strive to enhance my skills and contribute positively to my professional field. My goal is to achieve professional excellence and make a meaningful contribution to society.",
+    ],
+  },
+  {
+    id: "md-azharul-islam-ifti",
+    name: "Md. Azharul Islam Ifti",
+    status: "current",
+    batch: "30th",
+    role: "Research Member",
+    email: "azharulifti7904@gmail.com",
+    photo: "/images/Azharul Ifti.jpg",
+    links: [
+      {
+        label: "LinkedIn",
+        href: "#",
+      },
+    ],
+    bio: [
+      "I am a Pharmacy student at Dhaka International University with a strong interest in pharmaceutical research, drug discovery, and cancer research. I am passionate about learning new skills, exploring scientific innovations, and building a career in the pharmaceutical industry. My goal is to contribute to healthcare through research, knowledge, and professional growth.",
     ],
   },
 ];
